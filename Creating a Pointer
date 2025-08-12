@@ -1,0 +1,68 @@
+// Name: Barkha Kumari
+// PRN: 24070123029
+// Batch: EnTc A1
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int int_var = 10;
+    int* p_int = &int_var;
+    cout << "The original address of the int is: " << p_int << "\n";
+    cout << "The size of an int is: " << sizeof(int) << " bytes\n";
+    p_int++;
+    cout << "The address of int after increment is: " << p_int << "\n\n";
+
+    float float_var = 10.5f;
+    float* p_float = &float_var;
+    cout << "The original address of the float is: " << p_float << "\n";
+    cout << "The size of a float is: " << sizeof(float) << " bytes\n";
+    p_float++;
+    cout << "The address of float after increment is: " << p_float << "\n\n";
+
+    double double_var = 20.25;
+    double* p_double = &double_var;
+    cout << "The original address of the double is: " << p_double << "\n";
+    cout << "The size of a double is: " << sizeof(double) << " bytes\n";
+    p_double++;
+    cout << "The address of double after increment is: " << p_double << "\n\n";
+
+    char char_var = 'A';
+    char* p_char = &char_var;
+    cout << "The original address of the char is: " << static_cast<void*>(p_char) << "\n";
+    cout << "The size of a char is: " << sizeof(char) << " bytes\n";
+    p_char++;
+    cout << "The address of char after increment is: " << static_cast<void*>(p_char) << "\n\n";
+
+    bool bool_var = true;
+    bool* p_bool = &bool_var;
+    cout << "The original address of the bool is: " << p_bool << "\n";
+    cout << "The size of a bool is: " << sizeof(bool) << " bytes\n";
+    p_bool++;
+    cout << "The address of bool after increment is: " << p_bool << "\n";
+
+    return 0;
+}
+/*
+OUTPUT
+
+The original address of the int is: 0x7ffd5e2db8e4
+The size of an int is: 4 bytes
+The address of int after increment is: 0x7ffd5e2db8e8
+
+The original address of the float is: 0x7ffd5e2db8e0
+The size of a float is: 4 bytes
+The address of float after increment is: 0x7ffd5e2db8e4
+
+The original address of the double is: 0x7ffd5e2db8d8
+The size of a double is: 8 bytes
+The address of double after increment is: 0x7ffd5e2db8e0
+
+The original address of the char is: 0x7ffd5e2db8d7
+The size of a char is: 1 bytes
+The address of char after increment is: 0x7ffd5e2db8d8
+
+The original address of the bool is: 0x7ffd5e2db8d6
+The size of a bool is: 1 bytes
+The address of bool after increment is: 0x7ffd5e2db8d7 */

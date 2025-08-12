@@ -1,0 +1,32 @@
+// Name: Barkha Kumari
+// PRN: 24070123029
+// Batch: EnTc A1
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char str[] = "Hi! How are you";
+    int len = strlen(str);
+
+    char* p = str + len - 1; // Pointer to last character
+
+    cout << "String in reverse order:\n";
+    for (int i = len - 1; i >= 0; i--) {
+        cout << *p;
+        p--; // Move pointer backwards
+    }
+    cout << "\n";
+
+    return 0;
+}
+
+/*
+OUTPUT -->
+
+String in reverse order:
+uoy era woH !iH
+
+=== Code Execution Successful ===
+*/
